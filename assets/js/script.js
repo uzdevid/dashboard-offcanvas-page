@@ -9,9 +9,9 @@ function openOffCanvasPage(url) {
             }
 
             if (data.toaster.options) {
-                toastr.options = data.toaster.options;
+                toaster.options = data.toaster.options;
             } else {
-                toastr.options = {
+                toaster.options = {
                     closeButton: true, newestOnTop: true, progressBar: true, onclick: null
                 };
             }
@@ -19,7 +19,7 @@ function openOffCanvasPage(url) {
             if (data.toaster.script) {
                 eval(data.toaster.script);
             } else {
-                toastr.error(data.body.message, data.body.title)
+                toaster.error(data.body.message, data.body.title)
             }
 
             return false;
@@ -39,7 +39,7 @@ function openOffCanvasPage(url) {
         if (data.body.script) eval(data.body.script);
     })
         .fail(function (data) {
-            toastr.error(data.responseJSON.body.message, data.responseJSON.body.name);
+            toaster.error(data.responseJSON.body.message, data.responseJSON.body.name);
         });
 }
 
