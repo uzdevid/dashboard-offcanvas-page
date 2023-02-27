@@ -1,0 +1,21 @@
+{
+    "name": "dashboard/offcanvas-page",
+    "description": "offcanvas",
+    "type": "yii2-extension",
+    "keywords": ["yii2","dashboard","offcanvas page"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ibragimov Diyorbek",
+            "email": "uzdevid@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "dashboard\\offcanvaspage\\": ""
+        }
+    }
+}
